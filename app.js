@@ -21,8 +21,8 @@ app.put('/student/:id',StudentController.putStudent);
 app.delete('/student/:id',StudentController.deleteStudent);
 
 
-app.listen(port,()=>{
-    console.log(`Connected on http://localhost:${port}`);
-})
+app.listen(port, '0.0.0.0', () => {
+    console.log(`✅ Server running at http://0.0.0.0:${port}`);
+});
 
 module.exports = app;
